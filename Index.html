@@ -2,10 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Bvddy</title>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
-
+    <header class="main-header">
+         <button class="menu-btn">
+             <span class="menu-btn__item"></span>
+             <span class="menu-btn__item"></span>
+             <span class="menu-btn__item"></span>
+         </button>
+        <nav class="main-nav" role="navigation" id="main-nav">
+            <div class="apps">
+                <a href="#">
+                    <img src="images/app_store.svg" alt="ios-app" class="app__items">
+                </a>
+                <a href="#">
+                    <img src="images/play_market.svg" alt="android-app" class="app__items">
+                </a>
+            </div>
+            <ul class="main-nav-list">
+                <li class="main-nav-list__item">
+                    <a href="">Home</a>
+                </li>
+                <li class="main-nav-list__item">
+                    <a href="">Features</a>
+                </li>
+                <li class="main-nav-list__item">
+                    <a href="">Press</a>
+                </li>
+                <li class="main-nav-list__item">
+                    <a href="">Support</a>
+                </li>
+                <li class="main-nav-list__item">
+                    <a href="">Blog</a>
+                </li>
+            </ul>
+            <ul class="header-info">
+                <li class="header-info__item"><a href="">Privacy Policy</a></li>
+                <li class="header-info__item"><a href="">Terms & Conditions</a></li>
+                <li class="header-info__item"><a href="">Contact us</a></li>
+            </ul>
+            <div class="soc">
+                <a href="" class="soc__inst col-lg-4">
+                    <i class="fa-instagram"></i>
+                </a>
+                <a href="" class="soc__fb col-lg-4">
+                    <i class="fa-facebook"></i>
+                </a>
+                <a href="" class="soc__tw col-lg-4">
+                    <i class="fa-twitter"></i>
+                </a>
+            </div>
+            <div class="copyright">
+                © 2017 Buddy Tech, INC
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="apps">
+            <a href="#">
+                <img src="images/app_store.svg" alt="ios-app" class="app__items">
+            </a>
+            <a href="#">
+                <img src="images/play_market.svg" alt="android-app" class="app__items">
+            </a>
+        </div>
+    </main>
+<script async src="js/bootstrap.min.js"></script>
+<script async src="js/okay-nav.js"></script>
+    <script>
+        var nav = $("#main-nav").okayNav();
+    </script>
 </body>
 </html>

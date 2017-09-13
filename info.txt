@@ -1,8 +1,7 @@
-https://avocode.com
-Логин: cl1234+8@yandex.ru
-пароль
+п»їhttps://avocode.com
 
-: 
-a110220e
+login: cl1234+8@yandex.ru
+
+password: a110220e
 
 bvddy.net - site

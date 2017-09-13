@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.6.3');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+i{
+    font-family: 'FontAwesome';
+    font-style: normal;
+}
+.menu-btn__item{
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    margin-bottom: 3px;
+    background-color: #ff5400;
+
+}
+.soc__inst, .soc__fb, .soc__tw{
+    display: block;
+    width:29px;
+    height:29px;
+    padding: 6px;
+}
+.soc__inst{
+    /*background: url("../images/inst_bg.png") no-repeat center center;*/
+    background: linear-gradient(45deg, #fbb01c 30%, #e60211 55%, #c50093 70%);
+    border-radius: 50%;
+}
+.soc__fb{
+        /*background: url("../images/inst_bg.png") no-repeat center center;*/
+
+}
+@media only screen and (min-width: 320px){
+    .main-header{
+        position: relative;
+        height: 15px;
+        padding: 25px 0;
+        padding-left: 35px;
+    }
+    .main-nav{
+        position: absolute;
+        /*display: none;*/
+   }
+}
