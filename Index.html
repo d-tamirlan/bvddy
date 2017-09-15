@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
     <title>Bvddy</title>
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -11,12 +13,13 @@
 </head>
 <body>
     <header class="main-header">
-         <button class="menu-btn">
-             <span class="menu-btn__item"></span>
-             <span class="menu-btn__item"></span>
-             <span class="menu-btn__item"></span>
+         <button class="menu-open" id="menu-open">
+             <span class="menu-open__item"></span>
+             <span class="menu-open__item"></span>
+             <span class="menu-open__item"></span>
          </button>
-        <nav class="main-nav" role="navigation" id="main-nav">
+        <nav class="main-nav" id="main-nav">
+            <button class="menu-close fa-times-thin" id="menu-close"></button>
             <div class="apps">
                 <a href="#">
                     <img src="images/app_store.svg" alt="ios-app" class="app__items">
@@ -27,7 +30,7 @@
             </div>
             <ul class="main-nav-list">
                 <li class="main-nav-list__item">
-                    <a href="">Home</a>
+                    <a href="" class="active">Home</a>
                 </li>
                 <li class="main-nav-list__item">
                     <a href="">Features</a>
@@ -63,20 +66,22 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div class="apps">
-            <a href="#">
-                <img src="images/app_store.svg" alt="ios-app" class="app__items">
+    <main class="main">
+        <div class="main-img">
+            <a href="/">
+                <img src="images/main-logo.svg" alt="log" class="main-logo">
             </a>
-            <a href="#">
-                <img src="images/play_market.svg" alt="android-app" class="app__items">
-            </a>
+            <div class="apps">
+                <a href="#">
+                    <img src="images/app_store.svg" alt="ios-app" class="app__items">
+                </a>
+                <a href="#">
+                    <img src="images/play_market.svg" alt="android-app" class="app__items">
+                </a>
+            </div>
         </div>
+
     </main>
-<script async src="js/bootstrap.min.js"></script>
-<script async src="js/okay-nav.js"></script>
-    <script>
-        var nav = $("#main-nav").okayNav();
-    </script>
+    <script async src="js/events.js"></script>
 </body>
 </html>
