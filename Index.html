@@ -5,8 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
     <title>Bvddy</title>
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.2.1.min.js"></script>
@@ -21,10 +21,10 @@
         <nav class="main-nav" id="main-nav">
             <button class="menu-close fa-times-thin" id="menu-close"></button>
             <div class="apps">
-                <a href="#">
+                <a href="#" class="apps__ios">
                     <img src="images/app_store.svg" alt="ios-app" class="app__items">
                 </a>
-                <a href="#">
+                <a href="#" class="apps__android">
                     <img src="images/play_market.svg" alt="android-app" class="app__items">
                 </a>
             </div>
@@ -51,19 +51,19 @@
                 <li class="header-info__item"><a href="">Contact us</a></li>
             </ul>
             <div class="soc">
-                <a href="" class="soc__inst col-lg-4">
-                    <i class="fa-instagram"></i>
+                <a href="" class="soc__inst soc__inst--active">
+                    <img src="images/inst-logo.png" alt="instagram">
                 </a>
-                <a href="" class="soc__fb col-lg-4">
+                <a href="" class="soc__fb soc__fb--active">
                     <i class="fa-facebook"></i>
                 </a>
-                <a href="" class="soc__tw col-lg-4">
+                <a href="" class="soc__tw soc__tw--active">
                     <i class="fa-twitter"></i>
                 </a>
             </div>
-            <div class="copyright">
+            <p class="header__copyright">
                 © 2017 Buddy Tech, INC
-            </div>
+            </p>
         </nav>
     </header>
     <main class="main">
