@@ -1,35 +1,6 @@
-@font-face {
-    font-family: 'FontAwesome';
-    src: url('../fonts/fontawesome-webfont.eot?v=4.6.3');
-    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'CooperHewitt';
-    src: url('../fonts/cooper-hewitt/CooperHewitt-Thin.otf') format("opentype");
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'CooperHewitt';
-    src: url('../fonts/cooper-hewitt/CooperHewitt-Light.otf') format("opentype");
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'CooperHewitt';
-    src: url('../fonts/cooper-hewitt/CooperHewitt-Medium.otf') format("opentype");
-    font-weight: 700;
-    font-style: normal;
-}
-
 body{
-    font-family: "CooperHewitt", sans-serif;
-    font-weight: 500;
+    font-family: "Cooper Hewitt", sans-serif;
+    font-weight: 300;
     text-transform: uppercase;
     margin: 0;
 }
@@ -39,6 +10,13 @@ a{
 i{
     font-family: 'FontAwesome';
     font-style: normal;
+}
+img{
+    width: 100%;
+}
+.container{
+    margin: 0 auto;
+    width: 375px;
 }
 .menu-open{
     border: 0;
@@ -127,7 +105,7 @@ i{
 .header__copyright{
     width: 140px;
     color: #ffffff;
-    font-family: Verdana;
+    font-family: "Verdana";
     font-size: 9px;
     font-weight: 400;
     margin: 0 auto;
@@ -137,12 +115,12 @@ i{
     padding: 18px 0;
     padding-left: 30px;
 }
-
 .main-nav {
-    position: absolute;
+    position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
-    /*display: none;*/
+    display: none;
     background-image: linear-gradient(-40deg, #ff8d00 0%, #ff5400 100%);
     width: 100%;
     height: 100%;
@@ -153,16 +131,24 @@ i{
     padding-top: 25px;
     padding-right: 40px;
 }
+.apps__item{
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+.apps__item:first-child{
+    margin-right: 3px;
+}
 
 .main-nav-list {
     list-style: none;
     padding-left: 3px;
-    margin: 47px 40px 30px 42px;
+    margin: 40px 40px 30px 42px;
     border-bottom: 2px solid #fff;
 }
 
 .main-nav-list__item {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 .main-nav-list__item:last-child{
     margin-bottom: 35px;
@@ -181,27 +167,29 @@ i{
     text-align: center;
 }
 .main-logo {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -115px;
     width: 230px;
     height: 110px;
     display: inline-block;
-    margin-top: 230px;
-    margin-bottom: 25px;
 }
-
-.apps__android {
-    margin-left: 3px;
+.main-slider-wrapper .apps{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -62px;
 }
-
 .header-info {
     list-style: none;
     font-size: 9px;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 0 0 0 42    px;
+    margin: 0 0 0 42px;
     padding-left: 3px;
 }
-
 .header-info__item a {
     color: #fff;
     font-weight: 100;
@@ -209,4 +197,32 @@ i{
 
 .header-info__item {
     margin-bottom: 30px
+}
+.main-slider-wrapper{
+    position: relative;
+    height: 665px;
+}
+.main-slider{
+    height: 100%;
+}
+.main-slider__item{
+    height: 100%;
+    overflow: hidden;
+}
+.main-slider__item a{
+    display: block;
+    height: 100%;
+    position: relative;
+}
+.main-slider .slick-list{
+    height: 100%;
+}
+.main-slider__item img{
+    position: absolute;
+    left: -75%;
+    width: auto;
+    height: 100%;
+}
+.slick-track, .slick-list{
+    height: 100%;
 }

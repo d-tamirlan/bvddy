@@ -1,0 +1,2 @@
+https://transfonter.org/ - генерация css для шрифтов
+http://navnav.co/ - список навигаций
